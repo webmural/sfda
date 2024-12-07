@@ -1,0 +1,83 @@
+* { box-sizing: border-box }
+
+:any-link { 
+  text-decoration: .236em dotted underline;
+}
+
+:any-link:focus { 
+  text-decoration-style: solid;
+  filter: hue-rotate(-30deg);
+}
+
+:any-link:hover {
+  text-decoration-style: double;
+}
+
+h1 {
+  contain: layout;
+  margin: 10vh 10vw 38vh;
+}
+
+dfn {
+  font: unset;
+}
+
+p {
+  contain: layout;
+  display: flex;
+  font-size: .8rem;
+  flex-flow: column;
+  margin: 0;
+  padding: 2em;
+  min-height: 123vh;
+}
+
+p a { padding-inline: 1em }
+p:nth-child(odd) { align-items: start }
+p:nth-child(even) { align-items: end }
+
+html {
+  font-size: max(2em, 3vmax + 5vmin);
+  line-height: 1.618;
+}
+
+body {
+  contain: layout;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+div {
+  clear: both;
+  contain: layout;
+  display: flex;
+}
+
+footer {
+  contain: layout;
+  margin: 10vh;
+  margin-bottom: 38vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  text-align: end;
+}
+
+.floaf { float: left }
+.floah { float: right }
+
+.surround {
+  flex-flow: row wrap;
+}
+
+.tickle {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+[hidden] { display: none }
+:target { display: revert }
+
+.tweeter { font-size: 1rem }
+.woofer { font-size: 1.236em }
+
